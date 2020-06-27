@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio1</title>
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+        <script type="text/javascript">
+            var no;
+            no=prompt("Ingresa la cantidad de veces que quieres repetir el article");
+
+            no=parseInt(no);
+
+            if(no<=7){
+                for(var i=1;i<=no;i++){
+                   // document.getElementsByClassName('menor').color= red;
+                    document.write('<article class="menor">Article numero '+i+'</article>');
+                }
+            }
+            else{
+                for(var i=1;i<=no;i++){
+                   // document.getElementsByClassName('menor').color= red;
+                    document.write('<article class="mayor">Article numero '+i+'</article>');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

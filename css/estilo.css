@@ -1,0 +1,9 @@
+.menor{
+    color:#c623;
+    background-color: #10375c;
+}
+.mayor{
+    color:#10375c;
+    background-color: #c623;
+    display: inline-block;
+}

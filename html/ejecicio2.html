@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio2</title>
+        <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+        <script type="text/javascript">
+            function verificar(){
+                var region=document.getElementsByName("region");
+                for(i=0;i<=region.length; i++){
+                    if(region[i].checked){
+                        
+                        reg=parseInt(region[i].value);
+                        switch(reg){
+                            case 1:
+                                document.getElementById("negrita").innerHTML="norte";
+                                break;
+                            case 2:
+                                document.getElementById("negrita").innerHTML="centro";
+                                break;
+                            case 3:
+                                document.getElementById("negrita").innerHTML="sur";
+                                break;
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form action="">
+            <p>Selecciona la region</p>
+            <input type="radio" value="1" name="region">Norte<br>
+            <input type="radio" value="2" name="region">Centro<br>
+            <input type="radio" value="3" name="region">Sur<br>  
+
+            <input type="button" value="Enviar"onclick="verificar();">
+        </form>
+         <p>El voto es de la region <bold id="negrita"></bold></p>
+    </body>
+</html>
